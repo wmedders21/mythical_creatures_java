@@ -21,6 +21,6 @@ public class CentaurTests {
     @Test
     public void hasExcellentBowSkills() {
         Centaur centaur = new Centaur("George", "Palomino");
-        assertEquals(expected: "Twang", centaur.shoot());
+        assertEquals("Twang!!!", centaur.shoot());
     }
 }

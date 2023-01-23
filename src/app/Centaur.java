@@ -7,6 +7,10 @@ public class Centaur {
         this.name = name;
         this.breed = breed;
     }
+
+    public String shoot() {
+        return "Twang!!!";
+    }
     public static void main(String[] args) {
     }
 }
