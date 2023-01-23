@@ -43,6 +43,14 @@ public class Centaur {
             return "OK";
         }
     }
+
+    public Boolean isLaying() {
+        return !standing;
+    }
+
+    public void layDown() {
+        standing = false;
+    }
     public static void main(String[] args) {
     }
 }

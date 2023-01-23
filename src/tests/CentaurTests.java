@@ -68,4 +68,12 @@ public class CentaurTests {
         Centaur centaur = new Centaur("George", "Palomino");
         assertEquals("NO!", centaur.sleep());
     }
+
+    @Test 
+    public void isNotStandingAfterLayingDown() {
+        Centaur centaur = new Centaur("George", "Palomino");
+        centaur.layDown();
+        assertEquals(false, centaur.isStanding());
+        assertEquals(true, centaur.isLaying());
+    }
 }
