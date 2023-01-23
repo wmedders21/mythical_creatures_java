@@ -29,4 +29,10 @@ public class CentaurTests {
         Centaur centaur = new Centaur("George", "Palomino");
         assertEquals("Clop clop clop clop", centaur.run());
     }
+
+    @Test
+    public void whenFirstCreatedItIsNotCranky() {
+        Centaur centaur = new Centaur("George", "Palomino");
+        assertEquals(false, centaur.cranky());
+    }
 }
