@@ -11,3 +11,4 @@ public class DirewolfTests {
         Direwolf direwolf = new Direwolf("Nymeria");
         assertEquals("Nymeria", direwolf.name);
     }
+}
