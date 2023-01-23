@@ -3,7 +3,8 @@ package app;
 public class Centaur {
     public String name;
     public String breed;
-    private Boolean mood = false;
+    private Boolean cranky = false;
+    private Boolean standing = true;
     public Centaur(String name, String breed) {
         this.name = name;
         this.breed = breed;
@@ -17,8 +18,12 @@ public class Centaur {
         return "Clop clop clop clop";
     }
 
-    public Boolean cranky() {
-        return mood;
+    public Boolean isCranky() {
+        return cranky;
+    }
+
+    public Boolean isStanding() {
+        return standing;
     }
     public static void main(String[] args) {
     }

@@ -33,6 +33,12 @@ public class CentaurTests {
     @Test
     public void whenFirstCreatedItIsNotCranky() {
         Centaur centaur = new Centaur("George", "Palomino");
-        assertEquals(false, centaur.cranky());
+        assertEquals(false, centaur.isCranky());
+    }
+
+    @Test
+    public void whenFirstCreatedItIsStandingUp() {
+        Centaur centaur = new Centaur("George", "Palomino");
+        assertEquals(true, centaur.isStanding());
     }
 }
