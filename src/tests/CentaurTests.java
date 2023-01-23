@@ -50,4 +50,16 @@ public class CentaurTests {
         centaur.run();
         assertEquals(true, centaur.isCranky());
     }
+
+    @Test
+    public void willNotShootABowWhenCranky() {
+        Centaur centaur = new Centaur("George", "Palomino");
+        assertEquals(false, centaur.isCranky());
+
+        for (int i = 0; i < 3; i++) {
+            centaur.shoot();
+        }
+
+        assertEquals("NO!", centaur.shoot());
+    }
 }

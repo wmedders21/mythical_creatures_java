@@ -12,8 +12,12 @@ public class Centaur {
     }
 
     public String shoot() {
-        runAndShootCount++;
-        return "Twang!!!";
+        if (runAndShootCount >= 3) {
+            return "NO!";
+        } else {
+            runAndShootCount++;
+            return "Twang!!!";
+        }
     }
 
     public String run() {
