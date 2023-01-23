@@ -105,4 +105,18 @@ public class CentaurTests {
         centaur.standUp();
         assertEquals(true, centaur.isStanding());
     }
+    
+    @Test 
+    public void isNoLongerCrankyAfterSleeping() {
+        Centaur centaur = new Centaur("George", "Palomino");
+        centaur.shoot();
+        centaur.run();
+        centaur.shoot();
+        assertEquals(true, centaur.isCranky());
+
+        centaur.layDown();
+        centaur.sleep();
+
+        assertEquals(false, centaur.isCranky());
+    }
 }

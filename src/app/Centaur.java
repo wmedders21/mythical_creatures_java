@@ -44,6 +44,8 @@ public class Centaur {
         if (standing) {
             return "NO!";
         } else {
+            cranky = false;
+            runAndShootCount = 0;
             return "OK";
         }
     }
