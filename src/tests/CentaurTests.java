@@ -23,4 +23,10 @@ public class CentaurTests {
         Centaur centaur = new Centaur("George", "Palomino");
         assertEquals("Twang!!!", centaur.shoot());
     }
+
+    @Test
+    public void makesAHorseSoundWhenItRuns() {
+        Centaur centaur = new Centaur("George", "Palomino");
+        assertEquals("Clop clop clop clop", centaur.run());
+    }
 }
