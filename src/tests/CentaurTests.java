@@ -76,4 +76,11 @@ public class CentaurTests {
         assertEquals(false, centaur.isStanding());
         assertEquals(true, centaur.isLaying());
     }
+
+    @Test 
+    public void canSleepWhenLayingDown() {
+        Centaur centaur = new Centaur("George", "Palomino");
+        centaur.layDown();
+        assertNotEquals("NO!", centaur.sleep());
+    }
 }
