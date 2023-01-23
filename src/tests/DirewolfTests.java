@@ -11,4 +11,12 @@ public class DirewolfTests {
         Direwolf direwolf = new Direwolf("Nymeria");
         assertEquals("Nymeria", direwolf.name);
     }
+
+    @Test
+    public void canHaveADifferentNameAndCanHaveAHome() {
+        Direwolf wolf = new Direwolf("Lady");
+
+        assertEquals("Beyond the Wall", wolf.home);
+        assertEquals("Lady", wolf.name);
+    }
 }
