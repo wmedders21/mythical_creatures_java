@@ -62,4 +62,10 @@ public class CentaurTests {
 
         assertEquals("NO!", centaur.shoot());
     }
+
+    @Test 
+    public void willNotSleepWhenStanding() {
+        Centaur centaur = new Centaur("George", "Palomino");
+        assertEquals("NO!", centaur.sleep());
+    }
 }

@@ -35,6 +35,14 @@ public class Centaur {
     public Boolean isStanding() {
         return standing;
     }
+
+    public String sleep() {
+        if (standing) {
+            return "NO!";
+        } else {
+            return "OK";
+        }
+    }
     public static void main(String[] args) {
     }
 }
