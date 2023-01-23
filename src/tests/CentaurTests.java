@@ -8,7 +8,19 @@ import org.junit.Test;
 public class CentaurTests {
     @Test
     public void hasAName() {
-        Centaur centaur = new Centaur();
+        Centaur centaur = new Centaur("George", "Palomino");
         assertEquals("George", centaur.name);
+    }
+
+    @Test
+    public void hasABreed() {
+        Centaur centaur = new Centaur("George", "Palomino");
+        assertEquals("Palomino", centaur.breed);
+    }
+
+    @Test
+    public void hasExcellentBowSkills() {
+        Centaur centaur = new Centaur("George", "Palomino");
+        assertEquals(expected: "Twang", centaur.shoot());
     }
 }
