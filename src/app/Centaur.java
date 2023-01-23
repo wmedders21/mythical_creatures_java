@@ -21,8 +21,12 @@ public class Centaur {
     }
 
     public String run() {
-        runAndShootCount++;
-        return "Clop clop clop clop";
+        if (standing) {
+            runAndShootCount++;
+            return "Clop clop clop clop";
+        } else {
+            return "NO!";
+        }
     }
 
     public Boolean isCranky() {

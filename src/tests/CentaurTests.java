@@ -90,4 +90,11 @@ public class CentaurTests {
         centaur.layDown();
         assertEquals("NO!", centaur.shoot());
     }
+
+    @Test 
+    public void cannotRunWhenLayingDown() {
+        Centaur centaur = new Centaur("George", "Palomino");
+        centaur.layDown();
+        assertEquals("NO!", centaur.run());
+    }
 }
