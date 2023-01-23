@@ -12,7 +12,7 @@ public class Centaur {
     }
 
     public String shoot() {
-        if (runAndShootCount >= 3) {
+        if (runAndShootCount >= 3 || !standing) {
             return "NO!";
         } else {
             runAndShootCount++;
