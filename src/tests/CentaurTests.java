@@ -118,5 +118,10 @@ public class CentaurTests {
         centaur.sleep();
 
         assertEquals(false, centaur.isCranky());
+
+        centaur.standUp();
+
+        assertEquals("Twang!!!", centaur.shoot());
+        assertEquals("Clop clop clop clop", centaur.run());
     }
 }
