@@ -55,6 +55,10 @@ public class Centaur {
     public void layDown() {
         standing = false;
     }
+
+    public void standUp() {
+        standing = true;
+    }
     public static void main(String[] args) {
     }
 }

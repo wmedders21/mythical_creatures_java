@@ -97,4 +97,12 @@ public class CentaurTests {
         centaur.layDown();
         assertEquals("NO!", centaur.run());
     }
+
+    @Test 
+    public void canStandUp() {
+        Centaur centaur = new Centaur("George", "Palomino");
+        centaur.layDown();
+        centaur.standUp();
+        assertEquals(true, centaur.isStanding());
+    }
 }
