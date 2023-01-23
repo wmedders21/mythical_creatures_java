@@ -41,4 +41,13 @@ public class CentaurTests {
         Centaur centaur = new Centaur("George", "Palomino");
         assertEquals(true, centaur.isStanding());
     }
+
+    @Test
+    public void getsCrankyAfterRunningOrShootingABowThrice() {
+        Centaur centaur = new Centaur("George", "Palomino");
+        centaur.run();
+        centaur.shoot();
+        centaur.run();
+        assertEquals(true, centaur.isCranky());
+    }
 }
