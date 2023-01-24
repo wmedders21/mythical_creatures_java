@@ -121,7 +121,7 @@ public class DirewolfTests {
     public void huntsWhiteWalkers() {
         Direwolf wolf = new Direwolf("Nymeria", "Winterfell");
 
-        assertEquals(true, wolf.doesHuntWhiteWalkers());
+        assertEquals(true, wolf.canHuntWhiteWalkers());
     }
 
     @Test
@@ -131,6 +131,39 @@ public class DirewolfTests {
 
         wolf.protects(arya);
 
-        assertEquals(false, wolf.doesHuntWhiteWalkers());
+        assertEquals(false, wolf.canHuntWhiteWalkers());
+    }
+
+    @Test
+    public void canLeaveAndStopProtectingStarks() {
+        Direwolf summerwolf = new Direwolf("Summer", "Winterfell");
+        Direwolf ladywolf = new Direwolf("Lady", "Winterfell");
+        Stark sansa = new Stark("Sansa");
+        Stark arya = new Stark("Arya");
+
+        summerwolf.protects(arya);
+        ladywolf.protects(sansa);
+        summerwolf.leaves(arya);
+
+        assertEquals(true, summerwolf.starksToProtect().isEmpty());
+        assertEquals("Sansa", ladywolf.starksToProtect().get(0).name);
+        assertEquals(false, arya.isSafe());
+    }
+
+    @Test
+    public void leaveMethodReturnsTheStarkObject() {
+        Direwolf summerwolf = new Direwolf("Summer", "Winterfell");
+        Direwolf ladywolf = new Direwolf("Lady", "Winterfell");
+        Stark sansa = new Stark("Sansa");
+        Stark arya = new Stark("Arya");  
+        Stark rickon = new Stark("Rickon");
+
+        summerwolf.protects(arya);
+        ladywolf.protects(sansa);
+        summerwolf.leaves(arya);
+
+        Stark expected = ladywolf.leaves(rickon);
+
+        assertEquals("Rickon", expected.name);
     }
 }
