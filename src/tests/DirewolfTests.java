@@ -97,4 +97,11 @@ public class DirewolfTests {
         assertEquals(true, ladywolf.starksToProtect().contains(branStark));
         assertEquals(false, ladywolf.starksToProtect().contains(aryaStark));
     }
+
+    @Test
+    public void starksAreUnsafeByDefault() {
+        Stark stark = new Stark("Jon", "The Wall");
+
+        assertEquals(false, stark.isSafe());
+    }
 }
