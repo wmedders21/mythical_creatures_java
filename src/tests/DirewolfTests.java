@@ -19,4 +19,12 @@ public class DirewolfTests {
         assertEquals("Beyond the Wall", wolf.home);
         assertEquals("Lady", wolf.name);
     }
+
+    @Test
+    public void isMassiveByDefault() {
+        Direwolf wolf = new Direwolf("Ghost");
+
+        assertEquals("Massive", wolf.size);
+        assertEquals("Ghost", wolf.name);
+    }
 }
