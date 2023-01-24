@@ -50,7 +50,27 @@ public class DirewolfTests {
     @Test
     public void startsOffWithNoStarksToProtect() {
         Direwolf wolf = new Direwolf("Nymeria");
-        Stark stark = new Stark("Arya");
+        // Stark stark = new Stark("Arya");
+
+        assertEquals(0, wolf.starksToProtect().size());
+    }
+
+    @Test
+    public void protectsTheStarkChildren() {
+        Direwolf wolf = new Direwolf("Nymeria", "Riverlands");
+        Stark stark = new Stark("Arya", "Riverlands"); 
+
+        wolf.protects(stark);
+        
+        assertEquals("Arya", wolf.starksToProtect().get(0).name);
+    }
+
+    @Test
+    public void canOnlyProtectTheStarkChildrenIfTheyAreInTheSameLocation() {
+        Direwolf wolf = new Direwolf("Ghost");
+        Stark stark = new Stark("Jon", "King's Landing");
+
+        wolf.protects(stark);
 
         assertEquals(0, wolf.starksToProtect().size());
     }

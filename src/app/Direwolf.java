@@ -29,6 +29,12 @@ public class Direwolf {
         return starks;
     }
 
+    public void protects(Stark stark) {
+        if (stark.location == home) {
+            starks.add(stark);
+        }
+    }
+
     public static void main(String[] args) {
     }
 }
