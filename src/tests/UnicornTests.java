@@ -12,16 +12,16 @@ public class UnicornTests {
     assertEquals("Robert", unicorn.name);
   }
 
-  @Ignore("Skipping")
+@Ignore("Skipping")
   @Test
   public void isSilverByDefault() {
     Unicorn unicorn = new Unicorn("Margaret");
 
-    assertEquals("Silver", unicorn.color);
+    assertEquals("silver", unicorn.color);
     assertEquals(true, unicorn.isSilver());
   }
 
-  @Ignore("Skipping")
+@Ignore("Skipping")
   @Test
   public void doesNotHaveToBeSilver() {
     Unicorn unicorn = new Unicorn("Barbara", "purple");
@@ -30,7 +30,7 @@ public class UnicornTests {
     assertEquals(false, unicorn.isSilver());
   }
 
-  @Ignore("Skipping")
+@Ignore("Skipping")
   @Test
   public void saysSparklyStuff() {
     Unicorn unicorn = new Unicorn("Johnny");
