@@ -6,6 +6,7 @@ public class Direwolf {
     public String home;
     public String size;
     public ArrayList<Stark> starks = new ArrayList<Stark>();
+    private Boolean hunt = true;
 
     public Direwolf(String name, String home, String size) {
         this.name = name;
@@ -34,6 +35,10 @@ public class Direwolf {
             stark.setSafe();
             starks.add(stark);
         }
+    }
+
+    public Boolean doesHuntWhiteWalkers() {
+        return hunt;
     }
 
     public static void main(String[] args) {
