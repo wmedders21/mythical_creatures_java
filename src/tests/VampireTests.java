@@ -28,7 +28,7 @@ public class VampireTests {
 
     @Test
     public void canKeepOtherPets() {
-        Vampire varney - new Vampire("Varney", "fox");
+        Vampire varney = new Vampire("Varney", "fox");
 
         assertEquals("fox", varney.pet);
     }
