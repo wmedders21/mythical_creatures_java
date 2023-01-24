@@ -2,7 +2,6 @@ package tests;
 import app.Unicorn;
 import static org.junit.Assert.*;
 import org.junit.Test;
-import org.junit.Ignore;
 
 public class UnicornTests {
   @Test
@@ -12,7 +11,6 @@ public class UnicornTests {
     assertEquals("Robert", unicorn.name);
   }
 
-@Ignore("Skipping")
   @Test
   public void isSilverByDefault() {
     Unicorn unicorn = new Unicorn("Margaret");
@@ -21,7 +19,6 @@ public class UnicornTests {
     assertEquals(true, unicorn.isSilver());
   }
 
-@Ignore("Skipping")
   @Test
   public void doesNotHaveToBeSilver() {
     Unicorn unicorn = new Unicorn("Barbara", "purple");
@@ -30,7 +27,6 @@ public class UnicornTests {
     assertEquals(false, unicorn.isSilver());
   }
 
-@Ignore("Skipping")
   @Test
   public void saysSparklyStuff() {
     Unicorn unicorn = new Unicorn("Johnny");
