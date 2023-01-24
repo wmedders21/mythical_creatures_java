@@ -104,4 +104,16 @@ public class DirewolfTests {
 
         assertEquals(false, stark.isSafe());
     }
+
+    @Test
+    public void protectsTheStarks() {
+        Direwolf wolf = new Direwolf("Nymeria", "Winterfell");
+        Stark aryaStark = new Stark("Arya");
+        Stark sansaStark = new Stark("Sansa");
+
+        wolf.protects(aryaStark);
+
+        assertEquals(true, aryaStark.isSafe());
+        assertEquals(false, sansaStark.isSafe());
+    }
 }

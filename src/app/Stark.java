@@ -19,6 +19,14 @@ public class Stark {
         return safe;
     }
 
+    public void setSafe() {
+        safe = true;
+    }
+
+    public void setUnsafe() {
+        safe = false;
+    }
+
     public static void main(String[] args) {
 
     }
