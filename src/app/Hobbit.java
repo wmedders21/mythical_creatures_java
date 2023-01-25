@@ -29,6 +29,27 @@ public class Hobbit {
         }
     }
 
+    public Boolean isOld() {
+        if (age < 101) {
+            return false;
+        } else {
+            return true;
+        }
+    }
 
-  
+    public Boolean hasRing() {
+        if (name == "Frodo") {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public Boolean isShort() {
+        return true;
+    }
+
+    public static void main(String[] args) {
+
+    }  
 }

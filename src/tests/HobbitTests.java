@@ -59,4 +59,35 @@ public class HobbitTests {
 
         assertEquals(true, hobbit.isAdult());
     }
+
+    @Test
+    public void isOldAtAge101() {
+        Hobbit hobbit = new Hobbit("Frodo");
+
+        for (int i = 0; i < 100; i++) {
+            hobbit.celebrateBirthday();
+        }
+
+        assertEquals(false, hobbit.isOld());
+
+        hobbit.celebrateBirthday();
+
+        assertEquals(true, hobbit.isOld());
+    }
+
+    @Test
+    public void hasTheRingIfNameIsFrodo() {
+        Hobbit frodo = new Hobbit("Frodo");
+        Hobbit sam = new Hobbit("Sam");
+
+        assertEquals(true, frodo.hasRing());
+        assertEquals(false, sam.hasRing());
+    }
+
+    @Test
+    public void theyAreShort() {
+        Hobbit sam = new Hobbit("Sam");
+
+        assertEquals(true, sam.isShort());
+    }
 }
