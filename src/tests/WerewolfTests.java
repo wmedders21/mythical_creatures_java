@@ -109,7 +109,7 @@ public class WerewolfTests {
         assertEquals(false, werewolf.isHungry);
     }
 
-    @Ignore("skip")
+    // @Ignore("skip")
     @Test
     public void consumingVictimMakesVictimDead() {
         Werewolf werewolf = new Werewolf("David", "London");
