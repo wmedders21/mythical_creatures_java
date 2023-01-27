@@ -19,4 +19,8 @@ public class Human {
             return false;
         }
     }
+
+    public static void main(String[] args) {
+        
+    }
 }
