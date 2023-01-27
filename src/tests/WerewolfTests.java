@@ -30,7 +30,7 @@ public class WerewolfTests {
         assertEquals(true, werewolf.isHuman);
     }
 
-    @Ignore("skip")
+    // @Ignore("skip")
     @Test
     public void whenStartingAsAHumanChangingMakesItTurnIntoAWerewolf() {
         Werewolf werewolf = new Werewolf("David", "London");
