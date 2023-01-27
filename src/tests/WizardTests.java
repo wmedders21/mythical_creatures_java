@@ -60,7 +60,7 @@ public class WizardTests {
         assertEquals(true, wizard.isRested);
     }
 
-    @Ignore("Skipping")
+    // @Ignore("Skipping")
     @Test
     public void canCastSpells() {
         Wizard wizard = new Wizard("Bob");
