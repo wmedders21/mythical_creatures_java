@@ -8,4 +8,9 @@ public class Pirate {
         this.name = name;
         this.job = "Scallywag";
     }
+
+    public Pirate(String name, String job) {
+        this.name = name;
+        this.job = job;
+    }
 }
