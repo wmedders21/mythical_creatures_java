@@ -4,6 +4,7 @@ public class Ogre {
     public String name;
     public String home;
     public int swings = 0;
+    public int encounterCounter = 0;
 
     public Ogre(String name) {
         this.name = name;
@@ -16,6 +17,10 @@ public class Ogre {
     }
 
     public void encounter(Human human) {
+        encounterCounter ++;
+        if (encounterCounter % 3 == 0) {
+            swingAt(human);
+        }
         human.encounter();
     }
 
