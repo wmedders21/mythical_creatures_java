@@ -14,6 +14,7 @@ public class Victim {
             status = "alive";
         }
     }
+    
     public static void main(String[] args) {
 
     }

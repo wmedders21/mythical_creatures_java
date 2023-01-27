@@ -1,5 +1,4 @@
 package tests;
-
 import app.Vampire;
 import static org.junit.Assert.*;
 import org.junit.Test;

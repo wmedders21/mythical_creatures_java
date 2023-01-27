@@ -1,9 +1,7 @@
 package tests;
-
 import app.Direwolf;
 import app.Stark;
 import static org.junit.Assert.*;
-
 import org.junit.Test;
 
 public class DirewolfTests {

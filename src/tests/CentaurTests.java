@@ -1,8 +1,6 @@
 package tests;
-
 import app.Centaur;
 import static org.junit.Assert.*;
-
 import org.junit.Test;
 
 public class CentaurTests {

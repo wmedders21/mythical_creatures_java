@@ -18,4 +18,7 @@ public class Medusa {
         } 
     }
 
+    public static void main(String[] args) {
+
+    }
 }

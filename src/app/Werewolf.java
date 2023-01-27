@@ -34,6 +34,7 @@ public class Werewolf {
             victim.changeStatus();
         }
     }
+    
     public static void main(String[] args) {
 
     }

@@ -8,13 +8,11 @@ public class Hobbit {
     public Hobbit(String name) {
         this.name = name;
         this.disposition = "homebody";
-        // this.age = age;
     }
 
     public Hobbit(String name, String disposition) {
         this.name = name;
         this.disposition = disposition;
-        // this.age = age;
     }
 
     public void celebrateBirthday() {

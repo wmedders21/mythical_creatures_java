@@ -25,6 +25,7 @@ public class Unicorn {
         return false;
         }
     }
+    
     public static void main(String[] args) {
 
     }
