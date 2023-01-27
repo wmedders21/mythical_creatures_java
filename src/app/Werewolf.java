@@ -4,6 +4,7 @@ public class Werewolf {
     public String name;
     public String location;
     public Boolean isHuman = true;
+    public Boolean isHungry = false;
 
     public Werewolf(String name) {
         this.name = name;
