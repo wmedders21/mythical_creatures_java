@@ -31,6 +31,10 @@ public class Ogre {
         }
     }
 
+    public void apologize(Human human) {
+        human.wakeUp();
+    }
+
     public static void main(String[] args) {
 
     }

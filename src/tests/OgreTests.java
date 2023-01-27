@@ -1,8 +1,7 @@
 package tests;
 import static org.junit.Assert.*;
 import org.junit.Test;
-import org.junit.internal.runners.statements.ExpectException;
-import org.junit.Ignore;
+// import org.junit.Ignore;
 import app.Ogre;
 import app.Human;
 

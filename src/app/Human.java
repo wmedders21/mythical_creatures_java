@@ -21,6 +21,10 @@ public class Human {
         }
     }
 
+    public void wakeUp() {
+        isKnockedOut = false;
+    }
+
     public void knockOut() {
         isKnockedOut = true;
     }
