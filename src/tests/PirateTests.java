@@ -61,7 +61,7 @@ public class PirateTests {
         assertEquals(0, pirate.booty);
     }
 
-    @Ignore("skip")
+    // @Ignore("skip")
     @Test
     public void gets100BootyForRobbingAShip() {
         Pirate pirate = new Pirate("Jane");
