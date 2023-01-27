@@ -14,6 +14,10 @@ public class Wizard {
         this.isBearded = isBearded;
     }
 
+    public String incantation(String command) {
+        return "sudo " + command;
+    }
+
     public static void main(String[] args) {
 
     }
