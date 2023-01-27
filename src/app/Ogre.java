@@ -8,4 +8,9 @@ public class Ogre {
         this.name = name;
         this.home = "Swamp";
     }
+
+    public Ogre(String name, String home) {
+        this.name = name;
+        this.home = home;
+    }
 }
