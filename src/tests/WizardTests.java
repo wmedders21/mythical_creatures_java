@@ -12,7 +12,7 @@ public class WizardTests {
         assertEquals("Eric", wizard.name);
     }
 
-    @Ignore("Skipping")
+    // @Ignore("Skipping")
     @Test
     public void hasADifferentName() {
         Wizard wizard = new Wizard("Alex");
