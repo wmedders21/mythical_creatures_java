@@ -19,6 +19,10 @@ public class Wizard {
         return "sudo " + command;
     }
 
+    public String cast() {
+        return "MAGIC MISSILE";
+    }
+
     public static void main(String[] args) {
 
     }
