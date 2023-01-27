@@ -3,6 +3,7 @@ package app;
 public class Wizard {
     public String name;
     public Boolean isBearded;
+    public Boolean isRested = true;
 
     public Wizard(String name) {
         this.name = name;
