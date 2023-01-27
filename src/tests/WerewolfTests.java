@@ -91,31 +91,33 @@ public class WerewolfTests {
     @Test
     public void cannotConsumeAVictimIfInHumanForm() {
         Werewolf werewolf = new Werewolf("David", "London");
+        Victim victim = new Victim();
+        werewolf.consume(victim);
 
-        assertEquals(getClass(), getClass());
-    }
-
-    @Ignore("skip")
-    @Test
-    public void consumesAVictim() {
-        Werewolf werewolf = new Werewolf("David", "London");
-
-        assertEquals(getClass(), getClass());
+        assertEquals("alive", victim.status);
     }
 
     @Ignore("skip")
     @Test
     public void noLongerHungryAfterConsumingAVictim() {
         Werewolf werewolf = new Werewolf("David", "London");
+        Victim victim = new Victim();
 
-        assertEquals(getClass(), getClass());
+        werewolf.change();
+        werewolf.consume(victim);
+
+        assertEquals(false, werewolf.isHungry);
     }
 
     @Ignore("skip")
     @Test
     public void consumingVictimMakesVictimDead() {
         Werewolf werewolf = new Werewolf("David", "London");
+        Victim victim = new Victim();
 
-        assertEquals(getClass(), getClass());
+        werewolf.change();
+        werewolf.consume(victim);
+
+        assertEquals("dead", victim.status);
     }
 }
