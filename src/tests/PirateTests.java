@@ -36,7 +36,7 @@ public class PirateTests {
         assertEquals("cook", pirate.job);
     }
 
-    @Ignore("skip")
+    // @Ignore("skip")
     @Test
     public void isNotCursedByDefault() {
         Pirate pirate = new Pirate("Jack");
