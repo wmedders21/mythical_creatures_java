@@ -14,7 +14,7 @@ public class WerewolfTests {
         assertEquals("David", werewolf.name);
     }
 
-    @Ignore("skip")
+    // @Ignore("skip")
     @Test
     public void hasALocation() {
         Werewolf werewolf = new Werewolf("David", "London");
