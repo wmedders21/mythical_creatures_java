@@ -90,7 +90,7 @@ public class OgreTests {
         assertEquals(2, ogre.swings);
         assertEquals(true, human.isKnockedOut);
     }
-@Ignore
+// @Ignore
     @Test
     public void apologizesAndTheHumanWakesUp() {
         Ogre ogre = new Ogre("Shrek");
