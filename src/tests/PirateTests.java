@@ -28,7 +28,7 @@ public class PirateTests {
         assertEquals("Scallywag", pirate.job);
     }
 
-    @Ignore("skip")
+    // @Ignore("skip")
     @Test
     public void isNotAlwaysAScallywag() {
         Pirate pirate = new Pirate("Jack", "cook");
