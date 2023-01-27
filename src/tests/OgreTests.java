@@ -45,7 +45,7 @@ public class OgreTests {
 
         ogre.encounter(human);
         ogre.encounter(human);
-        assertEquals(false, human.noticesOgre);
+        assertEquals(false, human.noticesOgre());
 
         ogre.encounter(human);
         assertEquals(true, human.noticesOgre());

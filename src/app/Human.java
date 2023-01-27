@@ -11,4 +11,12 @@ public class Human {
     public void encounter() {
         encounterCounter ++;
     }
+
+    public Boolean noticesOgre() {
+        if (encounterCounter % 3 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
