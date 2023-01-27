@@ -20,7 +20,7 @@ public class WizardTests {
         assertEquals("Alex", wizard.name);
     }
 
-    @Ignore("Skipping")
+    // @Ignore("Skipping")
     @Test
     public void isBeardedByDefault() {
         Wizard wizard = new Wizard("Ben");
