@@ -43,13 +43,13 @@ public class PirateTests {
 
         assertEquals(false, pirate.isCursed);
 
-        pirate.commitHeinousAct;
+        pirate.commitHeinousAct();
         assertEquals(false, pirate.isCursed);
 
-        pirate.commitHeinousAct;
+        pirate.commitHeinousAct();
         assertEquals(false, pirate.isCursed);
 
-        pirate.commitHeinousAct;
+        pirate.commitHeinousAct();
         assertEquals(true, pirate.isCursed);
     }
 
