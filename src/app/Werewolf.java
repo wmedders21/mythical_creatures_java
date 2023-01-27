@@ -3,6 +3,7 @@ package app;
 public class Werewolf {
     public String name;
     public String location;
+    public Boolean isHuman = true;
 
     public Werewolf(String name) {
         this.name = name;
