@@ -60,7 +60,7 @@ public class OgreTests {
 
         assertEquals(1, ogre.swings);
     }
-@Ignore("Skipping")
+// @Ignore("Skipping")
     @Test
     public void swingsItsClubWhenNoticedByAHuman() {
         Ogre ogre = new Ogre("Brak");
