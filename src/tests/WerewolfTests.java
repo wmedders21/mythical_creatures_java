@@ -6,7 +6,7 @@ import app.Werewolf;
 import app.Victim;
 
 public class WerewolfTests {
-    @Ignore("skip")
+    // @Ignore("skip")
     @Test
     public void hasAName() {
         Werewolf werewolf = new Werewolf("David");
