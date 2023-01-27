@@ -20,7 +20,7 @@ public class PirateTests {
         assertEquals("Blackbeard", pirate.name);
     }
 
-    @Ignore("skip")
+    // @Ignore("skip")
     @Test
     public void isAScallywayByDefault() {
         Pirate pirate = new Pirate("Jane");
