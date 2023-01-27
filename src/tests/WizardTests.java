@@ -2,7 +2,7 @@ package tests;
 import app.Wizard;
 import static org.junit.Assert.*;
 import org.junit.Test;
-import org.junit.Ignore;
+// import org.junit.Ignore;
 
 public class WizardTests {
     @Test
@@ -80,7 +80,6 @@ public class WizardTests {
 
         malfoy.cast();
         
-        assertEquals(false, malfoy.isRested);        
-
+        assertEquals(false, malfoy.isRested);
     }
 }

@@ -4,6 +4,7 @@ public class Wizard {
     public String name;
     public Boolean isBearded;
     public Boolean isRested = true;
+    private int spellCount = 0;
 
     public Wizard(String name) {
         this.name = name;
@@ -20,6 +21,10 @@ public class Wizard {
     }
 
     public String cast() {
+        spellCount ++;
+        if (spellCount >= 3) {
+            isRested = false;
+        }
         return "MAGIC MISSILE";
     }
 
