@@ -28,12 +28,12 @@ public class WizardTests {
         assertEquals(true, wizard.isBearded);
     }
 
-    @Ignore("Skipping")
+    // @Ignore("Skipping")
     @Test
     public void isNotAlwaysBearded() {
         Wizard wizard = new Wizard("Stella", false);
 
-        assertEquals(false, wizard.isBearded());
+        assertEquals(false, wizard.isBearded);
     }
 
     @Ignore("skipping")
