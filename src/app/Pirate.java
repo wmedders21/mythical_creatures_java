@@ -5,6 +5,7 @@ public class Pirate {
     public String job;
     public Boolean isCursed = false;
     public int heinousActCounter = 0;
+    public int booty = 0;
 
     public Pirate(String name) {
         this.name = name;
