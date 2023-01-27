@@ -9,6 +9,11 @@ public class Wizard {
         this.isBearded = true;
     }
 
+    public Wizard(String name, Boolean isBearded) {
+        this.name = name;
+        this.isBearded = isBearded;
+    }
+
     public static void main(String[] args) {
 
     }
