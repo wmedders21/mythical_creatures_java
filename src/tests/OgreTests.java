@@ -18,7 +18,7 @@ public class OgreTests {
         Ogre ogre = new Ogre("Brak");
         assertEquals("Swamp", ogre.home);
     }
-@Ignore("Skipping")
+// @Ignore("Skipping")
     @Test
     public void doesNotHaveToLiveInASwamp() {
         Ogre ogre = new Ogre("Brak", "Castle");
