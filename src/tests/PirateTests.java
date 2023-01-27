@@ -12,7 +12,7 @@ public class PirateTests {
         assertEquals("Jane", pirate.name);
     }
 
-    @Ignore("skip")
+    // @Ignore("skip")
     @Test
     public void canHaveADifferentName() {
         Pirate pirate = new Pirate("Blackbeard");
