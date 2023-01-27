@@ -23,4 +23,12 @@ public class Pirate {
             isCursed = true;
         }
     }
+
+    public void robShip() {
+        booty += 100;
+    }
+
+    public static void main(String[] args) {
+
+    }
 }
