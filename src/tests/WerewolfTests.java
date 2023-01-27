@@ -22,7 +22,7 @@ public class WerewolfTests {
         assertEquals("London", werewolf.location);
     }
 
-    @Ignore("skip")
+    // @Ignore("skip")
     @Test
     public void isHumanByDefault() {
         Werewolf werewolf = new Werewolf("David", "London");
