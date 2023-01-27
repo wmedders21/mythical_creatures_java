@@ -13,6 +13,14 @@ public class Werewolf {
         this.name = name;
         this.location = location;
     }
+
+    public void change() {
+        if (isHuman) {
+            isHuman = false;
+        } else {
+            isHuman = true;
+        }
+    }
     public static void main(String[] args) {
 
     }
