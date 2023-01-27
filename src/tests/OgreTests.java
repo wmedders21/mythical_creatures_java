@@ -37,7 +37,7 @@ public class OgreTests {
 
         assertEquals(1, human.encounterCounter);
     }
-@Ignore("Skipping")
+// @Ignore("Skipping")
     @Test
     public void isNoticedByEveryThirdHuman() {
         Ogre ogre = new Ogre("Brak");
