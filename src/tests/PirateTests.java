@@ -53,7 +53,7 @@ public class PirateTests {
         assertEquals(true, pirate.isCursed);
     }
 
-    @Ignore("skip")
+    // @Ignore("skip")
     @Test
     public void startsWithNoBooty() {
         Pirate pirate = new Pirate("Jane");
