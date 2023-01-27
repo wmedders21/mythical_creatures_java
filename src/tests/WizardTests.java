@@ -44,7 +44,7 @@ public class WizardTests {
         assertEquals("sudo chown ~/bin", wizard.incantation("chown ~/bin"));
     }
 
-    @Ignore("skipping")
+    // @Ignore("skipping")
     @Test
     public void hasManyRootPowers() {
         Wizard wizard = new Wizard("Sal", true);
@@ -52,7 +52,7 @@ public class WizardTests {
         assertEquals("sudo rm -rf /home/mirandax", wizard.incantation("rm -rf /home/mirandax"));
     }
 
-    @Ignore("skipping")
+    // @Ignore("skipping")
     @Test
     public void startsRested() {
         Wizard wizard = new Wizard("Bob");
