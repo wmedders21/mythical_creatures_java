@@ -1,7 +1,7 @@
 package tests;
 import static org.junit.Assert.*;
-import static org.junit.Test;
-import static org.junit.Ignore;
+import org.junit.Test;
+// import org.junit.Ignore;
 import app.Werewolf;
 import app.Victim;
 
@@ -49,7 +49,7 @@ public class WerewolfTests {
         assertEquals(true, werewolf.isHuman);
         werewolf.change();
 
-        assertEquals(false, werewolf.isWolf);
+        assertEquals(false, werewolf.isHuman);
         werewolf.change();
 
         assertEquals(true, werewolf.isHuman);
