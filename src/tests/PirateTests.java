@@ -22,10 +22,10 @@ public class PirateTests {
 
     // @Ignore("skip")
     @Test
-    public void isAScallywayByDefault() {
+    public void isAScallywagByDefault() {
         Pirate pirate = new Pirate("Jane");
 
-        assertEquals("Scallyway", pirate.job);
+        assertEquals("Scallywag", pirate.job);
     }
 
     @Ignore("skip")
