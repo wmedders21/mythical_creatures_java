@@ -13,4 +13,8 @@ public class Ogre {
         this.name = name;
         this.home = home;
     }
+
+    public void encounter(Human human) {
+        human.encounter();
+    }
 }
