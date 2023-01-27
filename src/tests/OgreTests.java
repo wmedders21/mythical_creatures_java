@@ -12,7 +12,7 @@ public class OgreTests {
         assertEquals("Brak", ogre.name);
     }
 
-@Ignore("Skipping")
+// @Ignore("Skipping")
     @Test
     public void livesSomewhereByDefault() {
         Ogre ogre = new Ogre("Brak");
