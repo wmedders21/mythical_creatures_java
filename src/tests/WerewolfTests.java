@@ -77,7 +77,7 @@ public class WerewolfTests {
         assertEquals(false, werewolf.isHungry);
     }
     
-    @Ignore("skip")
+    // @Ignore("skip")
     @Test
     public void becomesHungryAfterChangingIntoAWerewolf() {
         Werewolf werewolf = new Werewolf("David", "London");
