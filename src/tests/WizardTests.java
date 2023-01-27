@@ -25,7 +25,7 @@ public class WizardTests {
     public void isBeardedByDefault() {
         Wizard wizard = new Wizard("Ben");
 
-        assertEquals(true, wizard.isBearded());
+        assertEquals(true, wizard.isBearded);
     }
 
     @Ignore("Skipping")
