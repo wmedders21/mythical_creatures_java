@@ -36,7 +36,7 @@ public class WizardTests {
         assertEquals(false, wizard.isBearded);
     }
 
-    @Ignore("skipping")
+    // @Ignore("skipping")
     @Test
     public void hasRootPowers() {
         Wizard wizard = new Wizard("Stella", false);
