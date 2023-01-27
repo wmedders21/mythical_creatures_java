@@ -26,6 +26,9 @@ public class Ogre {
 
     public void swingAt(Human human) {
         swings ++;
+        if (swings % 2 == 0) {
+            human.knockOut();
+        }
     }
 
     public static void main(String[] args) {

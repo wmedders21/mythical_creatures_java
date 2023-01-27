@@ -88,7 +88,7 @@ public class OgreTests {
 
         assertEquals(6, ogre.encounterCounter);
         assertEquals(2, ogre.swings);
-        assertEquals(true, human.isKnockedOut());
+        assertEquals(true, human.isKnockedOut);
     }
 @Ignore
     @Test
@@ -100,10 +100,10 @@ public class OgreTests {
             ogre.encounter(human);
         }
 
-        assertEquals(true, human.isKnockedOut());
+        assertEquals(true, human.isKnockedOut);
 
         ogre.apologize(human);
 
-        assertEquals(false, human.isKnockedOut());
+        assertEquals(false, human.isKnockedOut);
     }
 }
