@@ -2,3 +2,4 @@
 bin/
 lib/
 *.class
+.DS_Store
