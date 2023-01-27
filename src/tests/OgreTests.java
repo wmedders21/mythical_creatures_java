@@ -25,7 +25,7 @@ public class OgreTests {
 
         assertEquals("Castle", ogre.home);
     }
-@Ignore("Skipping")
+// @Ignore("Skipping")
     @Test
     public void canMeetHumans() {
         Ogre ogre = new Ogre("Brak");
