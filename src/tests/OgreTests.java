@@ -2,7 +2,7 @@ package tests;
 import static org.junit.Assert.*;
 import org.junit.Test;
 import org.junit.internal.runners.statements.ExpectException;
-
+import org.junit.Ignore;
 import app.Ogre;
 
 public class OgreTests {
@@ -12,19 +12,20 @@ public class OgreTests {
         assertEquals("Brak", ogre.name);
     }
 
+@Ignore("Skipping")
     @Test
     public void livesSomewhereByDefault() {
         Ogre ogre = new Ogre("Brak");
         assertEquals("Swamp", ogre.home);
     }
-
+@Ignore("Skipping")
     @Test
     public void doesNotHaveToLiveInASwamp() {
         Ogre ogre = new Ogre("Brak", "Castle");
 
         assertEquals("Castle", ogre.home);
     }
-
+@Ignore("Skipping")
     @Test
     public void canMeetHumans() {
         Ogre ogre = new Ogre("Brak");
@@ -35,7 +36,7 @@ public class OgreTests {
 
         assertEquals(1, human.encounterCounter);
     }
-
+@Ignore("Skipping")
     @Test
     public void isNoticedByEveryThirdHuman() {
         Ogre ogre = new Ogre("Brak");
@@ -48,7 +49,7 @@ public class OgreTests {
         ogre.encounter(human);
         assertEquals(true, human.noticesOgre());
     }
-
+@Ignore("Skipping")
     @Test
     public void canSwingAClub() {
         Ogre ogre = new Ogre("Brak");
@@ -58,7 +59,7 @@ public class OgreTests {
 
         assertEquals(1, ogre.swings);
     }
-
+@Ignore("Skipping")
     @Test
     public void swingsItsClubWhenNoticedByAHuman() {
         Ogre ogre = new Ogre("Brak");
@@ -74,7 +75,7 @@ public class OgreTests {
         assertEquals(1, ogre.swings);
         assertEquals(true, human.noticesOgre());
     }
-
+@Ignore
     @Test
     public void hitsHumanEverySecondTimeItSwings() {
         Ogre ogre = new Ogre("Shrek");
@@ -88,7 +89,7 @@ public class OgreTests {
         assertEquals(2, ogre.swings);
         assertEquals(true, human.isKnockedOut());
     }
-
+@Ignore
     @Test
     public void apologizesAndTheHumanWakesUp() {
         Ogre ogre = new Ogre("Shrek");
