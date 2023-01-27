@@ -68,7 +68,7 @@ public class WizardTests {
         assertEquals("MAGIC MISSILE", wizard.cast());
     }
 
-    @Ignore("skipping")
+    // @Ignore("skipping")
     @Test
     public void getsTiredAfterCastingThreeSpells() {
         Wizard malfoy = new Wizard("Malfoy");
