@@ -24,6 +24,13 @@ public class Werewolf {
             isHuman = true;
         }
     }
+
+    public void consume(Victim victim) {
+        if (isHuman) {
+            isHungry = false;
+            victim.changeStatus();
+        }
+    }
     public static void main(String[] args) {
 
     }
