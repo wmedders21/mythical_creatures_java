@@ -5,7 +5,7 @@ import org.junit.Ignore;
 import app.Pirate;
 
 public class PirateTests {
-    @Ignore("skip")
+    // @Ignore("skip")
     @Test
     public void hasAName() {
         Pirate pirate = new Pirate("Jane");
